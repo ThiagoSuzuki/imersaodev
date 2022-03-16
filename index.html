@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Calculadora de Média</title>
+  
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div class="page-title">
+          <h1 class="page-title">Calculadora de Média</h1>
+          <p class="page-subtitle">
+            Descubra qual a sua média de nota de todas as provas!
+          </p>
+          <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+
+  
+        <div class="formularioNotas" id="form">
+
+        <label for="primeiroSemestre">Nota do 1º Semestre</label>
+        <input type="text" id="n1" class="input-padrao" required placeholder="Nota do 1º Semestre">
+
+        <label for="segundoSemestre">Nota do 2º Semestre</label>
+        <input type="text" id="n2" class="input-padrao" required placeholder="Nota do 2º Semestre">
+
+        <label for="terceiroSemestre">Nota do 3º Semestre</label>
+        <input type="text" id="n3" class="input-padrao" required placeholder="Nota do 3º Semestre">
+
+        <label for="quartoSemestre">Nota do 4º Semestre</label>
+        <input type="text" id="n4" class="input-padrao" required placeholder="Nota do 4º Semestre">
+
+        <button type="submit" class="button" id="calcular">Calcular média</button>
+  
+        <div id="resultado"></div>
+        </div>
+
+          <section>
+            <p class="result">Resultado: </p>
+            <h4 class="result" id="result"></h4>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
